@@ -101,3 +101,9 @@ Available [blade directives](https://laravel.com/docs/5.6/blade) you can use in 
     ...
 @endsettingtrue
 ```
+
+## License
+
+LevooLabs Settings is licensed under the [MIT License](http://opensource.org/licenses/MIT).
+
+Copyright 2018 [LevooLabs](http://levoolabs.com/)
