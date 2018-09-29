@@ -57,7 +57,7 @@ if (setting_exists('name')) {
 
 ### Types
 
-All setting values are stored as text but you can use different functions for auto typecasting. The first parameter is the name of the setting and the second is the value. With one parameter all the functions are work as a *getter* with two parameters they work as a *setter*.
+All setting values are stored as text but you can use different functions for auto typecasting. The first parameter is the name of the setting and the second is the value. With one parameter all the functions work as a *getter* with two parameters they work as a *setter*.
 
 ```php
 setting_bool('vouchers_enabled', true);
@@ -76,7 +76,7 @@ Setting::secret('my_secret', $secret)
 ```
 
 - The collection method always returns a [Collection](https://laravel.com/docs/5.6/collections). If the setting doesn't exist it returns an empty one. The `$value` for the setter can be an array or a `Collection`.
-- The secret method will use Laravel's [Encrypter](https://laravel.com/docs/5.6/encryption) for encrypt and decrypt values.
+- The secret method will use Laravel's [Encrypter](https://laravel.com/docs/5.6/encryption) to encrypt(*setter*) and decrypt(*getter*) values.
 
 ### Views
 
